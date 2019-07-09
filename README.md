@@ -1,10 +1,10 @@
 # Introduction to Docker!
 Docker is a tool that allows developers to package and deploy their application into sandbox (called container) on any operating system.
 
-# Why Docker!
-Easy to containerize any complex application. It is lightweight as it runs natively on Linux and shares the kernel of the host machine. Better than virtual machine as it is not using hyperviser.
+## Why Docker!
+Easy to containerize any application. It is lightweight as it runs natively on Linux and shares the kernel of the host machine. Better than virtual machine as it is not using hyperviser.
 
-# Features!
+## Features!
   - Platform independent
   - Portable
   - Application Isolation
@@ -14,11 +14,11 @@ Easy to containerize any complex application. It is lightweight as it runs nativ
   - Continuous Integration
   - Docker Hub
 
-# Docker Image and Container!
+## Docker Image and Container!
 An image is an executable package that includes everything needed to run an application-codes, a runtime, libraries, environment variables, and configuration files.
 A container is a runtime instance of an image.
 
-# Prepare your Docker environment
+## Prepare your Docker environment
 #### Installation
 Please follow installation guide for respective operating system [here.](https://docs.docker.com/docker-for-mac/install/)
 
@@ -36,7 +36,7 @@ $ docker ps -a || docker container ls -a
 $ docker images
 ```
 
-# How to create Docker Image!
+## How to create Docker Image!
 
 We need `Dockerfile` to create docker image.
 ##### What is Dockerfile?
@@ -55,7 +55,7 @@ Here are some basic commands for Dockerfile.
 ##### Example 1:
 
 Dockerfile
-```bash
+```dockerfile
 FROM alpine:latest
 
 ENTRYPOINT ["echo"]
@@ -64,7 +64,7 @@ CMD ["hello","world"]
 
 ##### Example 2:
 Dockerfile:
-```bash
+```dockerfile
 FROM python:alpine
 
 WORKDIR /
