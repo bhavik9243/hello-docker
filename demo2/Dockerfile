@@ -2,9 +2,8 @@ FROM python:alpine
 
 WORKDIR /
 
-COPY Main.py start.sh requirements.txt /
+COPY Main.py start.sh /
 RUN chmod +x /start.sh
-RUN pip install -r requirements.txt
 
 ENTRYPOINT ["/start.sh"]
 CMD ["hello","world"]

@@ -7,4 +7,3 @@ RUN chmod +x /start.sh
 RUN pip install -r requirements.txt
 
 ENTRYPOINT ["/start.sh"]
-CMD ["hello","world"]
