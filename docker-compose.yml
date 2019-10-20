@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  my_app:
+    build:
+      context: ./demo3
+      dockerfile: Dockerfile
+    image: test:3
+    ports:
+      - 8088:7777
